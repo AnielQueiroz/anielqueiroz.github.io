@@ -1,0 +1,19 @@
+@media  screen and (max-width: 720px) {
+    .carousel {
+        width: 100%;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .formulario {
+        width: 100%;
+        height: 490px;
+    }
+
+    .formulario iframe {
+        width: 99%;
+        height: 489px;
+    }
+}
