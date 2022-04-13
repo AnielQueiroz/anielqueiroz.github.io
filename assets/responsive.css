@@ -4,16 +4,17 @@
     }
 
     .video {
-        width: 100%;
+        width: 90%;
+        height: 300px;
     }
 
     .formulario {
         width: 100%;
-        height: 490px;
+        height: 480px;
     }
 
     .formulario iframe {
         width: 99%;
-        height: 489px;
+        height: 479px;
     }
 }
