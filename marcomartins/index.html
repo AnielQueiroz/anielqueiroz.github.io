@@ -4,49 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="assets/home.css">
-    <link rel="stylesheet" href="assets/contato.css">
-
-    <title>Loja - Contato</title>
+    
+    <link rel="stylesheet" href="style/index.css">
+    
+    <title>Marco Martins</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <a href="index.html"><img src="logo" alt="logo"></a>
-        <nav>
-            <ul class="navegacao">
-                <li class="navegacao-link"><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="caixa">
+            <img src="assets/img/logo.jpeg" alt="">
+
+            <nav>
+                <ul>
+                    <li><a href="#">QUEM SOMOS</a></li>
+                    <li><a href="#">NOSSOS SERVIÇOS</a></li>
+                    <li><a href="#">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
+        <div class="separator"></div>
 
-        <div class="formulario">
-            <h1>Formulário</h1>
+        <section class="sobre-nos">
+            <div class="coluna-1 sbn-texto">
+                <h2>Sobre Nós</h2>
 
-            <form id="contact" action="./cadastro_concluido.html">
-                
-                <h4>Entre em contato conosco e seja respondido em até 24hrs!</h4>
-                
-                  <input placeholder="Seu nome" type="text" tabindex="1" required autofocus>
-               
-                  <input placeholder="Seu email" type="email" tabindex="2" required>
-                
-               
-                  <input placeholder="(99) 9 9999-9999" type="number" tabindex="3" pattern="^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$" title="Número inválido" required>
-               
-                  <!--<input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>-->
-               
-                  <textarea placeholder="Digite aqui sua mensagem..." tabindex="5" required></textarea>
-                
-                  <button name="submit" type="submit" id="contact-submit" data-submit="...Enviando">Enviar</button>
-                
-              </form>
-        </div>
+                <p>Texto teste, alê lê blê, auuu</p>
+            </div>
 
-        <div class="whatsapp-icon">
-            <a target="_" href="https://api.whatsapp.com/send?phone=+5571985070506&text=Olá,%20gostaria de ajuda!"><img src="img/whatsapp.jpg" alt=""></a>
-        </div>
+            <div class="coluna-2 sbn-img">
+                <img src="assets/img/barber2.webp" alt="item1" class="item1">
+            </div>
+
+        </section>
+
+        <section class="nossos-servicos">
+            <h2>Nossos Serviços</h2>
+
+            <div class="nossos-servicos-itens">
+                <img src="" alt="itens">
+                <img src="" alt="itens">
+                <img src="" alt="itens">
+                <img src="" alt="itens">
+            </div>
+        </section>
     </main>
 </body>
 </html>
