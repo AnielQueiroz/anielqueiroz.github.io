@@ -82,6 +82,26 @@ nav a:hover {
     height: 100%;
 }
 
+.box-servicos {
+    width: 100vw;
+    height: 400px;
+    background-image: url(../assets/img/tijolinho.jpg);
+}
+
+.box-servicos h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.servicos {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    border: 1px solid red;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
 .nossos-servicos {
     position: relative;
     background: #5C97FF;
