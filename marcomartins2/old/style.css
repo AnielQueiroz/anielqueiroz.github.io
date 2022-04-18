@@ -180,7 +180,6 @@ td, th {
 
 .principal {
 	padding: 3em 0;
-	background: #FEFEFE;
 	width: 360px;
 	margin: 0 auto;
 }
@@ -206,7 +205,6 @@ td, th {
 
 .mapa {
 	padding: 3em 0;
-	background: linear-gradient(#FEFEFE, #888888);
 }
 
 .mapa-conteudo {

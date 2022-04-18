@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(#FEFEFE, #888888);
 }
 
 header {
@@ -23,7 +24,7 @@ header {
 nav {
     position: absolute;
     top: .87rem;
-    right: 2px;
+    right: 5px;
 }
 
 nav li {
@@ -50,10 +51,15 @@ nav a:hover {
 }
 
 .caixa #logo {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     margin-left: 5px;
+}
+
+.espacamento {
+    width: 100vw;
+    height: 103px;
 }
 
 .banner {
@@ -61,7 +67,7 @@ nav a:hover {
 }
 
 .banner img {
-    padding-top: 103px;
+    /*padding-top: 103px;*/
     width: 100%;
 }
 
