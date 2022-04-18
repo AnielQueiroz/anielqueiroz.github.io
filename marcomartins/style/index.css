@@ -53,6 +53,14 @@ nav a:hover {
     margin-left: 5px;
 }
 
+.banner {
+    border: 1px solid red;
+}
+
+.banner img {
+   
+}
+
 .separator {
     background: #aa9a05;
     width: 100vw;
