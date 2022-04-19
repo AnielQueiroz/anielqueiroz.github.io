@@ -4,27 +4,31 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
     background: linear-gradient(#FEFEFE, #888888);
 }
 
 header {
     background: url("../img/bg.jpg");
     /*background: #BBBBBB;*/
-    padding: 1.87rem 0;
+    padding: 2.87rem 0;
     position: fixed;
 }
 
 .caixa {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    /*position: relative;*/
     width: 100vw;
     margin: 0 auto;
 }
 
 nav {
+    padding-top: 10px;
     position: absolute;
-    top: .87rem;
-    right: 5px;
+    top: 6.87rem;
+    /*right: 5px;*/
 }
 
 nav li {
@@ -59,7 +63,7 @@ nav a:hover {
 
 .espacamento {
     width: 100vw;
-    height: 103px;
+    height: 140px;
 }
 
 .banner {
@@ -78,15 +82,32 @@ nav a:hover {
 .principal h2 {
     text-align: center;
     padding: 10px 0;
+    margin: 0 0 1em;
 }
 
 .principal p {
     text-align: justify;
-    padding: 0 14px;
+    padding: 0 20px;
+    margin: 0 0 1em;
+}
+
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 5px 20px 0 20px;
 }
 
 .mapa {
     width: 100vw;
+}
+
+.tabela {
+    padding-top: 20px;
+    width: 100vw;
+}
+
+.tabela h1 img {
+    width: 70%;
 }
 
 .mapa .mapa-conteudo {
@@ -101,7 +122,7 @@ nav a:hover {
 
 .mapa p {
     text-align: justify;
-    padding: 0 14px;
+    padding: 0 20px;
 }
 
 .beneficios {
@@ -109,6 +130,7 @@ nav a:hover {
 }
 
 .beneficios {
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -127,6 +149,29 @@ nav a:hover {
 
 .beneficios .video {
     display: flex;
+}
+
+.itens {
+	line-height: 1.5;
+}
+
+.itens:first-child {
+	font-weight: bold;
+}
+
+.itens:before {
+	content: "🟊";
+}
+
+.imagem-beneficios {
+	width: 60%;
+	opacity: 1;
+	transition: .5s;
+	box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.3;
 }
 
 footer #logo {
