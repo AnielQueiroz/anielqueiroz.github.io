@@ -107,46 +107,11 @@ body {
     margin: 0 auto;
 }
 
-/*nav {
-    padding-top: 10px;
-    position: absolute;
-    top: 6.87rem;
-    right: 5px;
-}
-
-nav li {
-    display: inline;
-    margin: 0 0 0 10px;
-}
-
-nav li a {
-    color: #FFFFFF;
-    font-size: 12px;
-}
-
-nav a {
-	text-transform: uppercase;
-	color: #000000;
-	font-weight: bold;
-	font-size: 22px;
-	text-decoration: none;
-}
-
-nav a:hover {
-	color: #C78C19;
-	text-decoration: underline;
-}*/
-
 #logo {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     /*margin-left: 5px;*/
-}
-
-.espaamento {
-    width: 100vw;
-    height: 140px;
 }
 
 .banner {
@@ -208,7 +173,7 @@ nav a:hover {
     background: url("../img/barbearia.jpeg");
     background-size: cover;
     width: 100vw;
-    height: 36vh;
+    height: 19rem;
     background-repeat: no-repeat;
 }
 
