@@ -177,7 +177,8 @@ nav a:hover {
     width: 100vw;
 }
 
-.principal-content{
+.principal-content {
+    height: 100%;
     width: 90%;
     padding: 0 20px;
 }
