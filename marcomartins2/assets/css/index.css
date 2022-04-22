@@ -115,19 +115,20 @@ body {
 }
 
 .banner {
-    height: 75vh;
     background: url("../img/bg_barber.jpg");
+    height: 75vh;
     background-size: cover;
     background-position: center center;
     width: 100vw;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
 
 .seu-estilo {
     text-align: center;
     background: url("../img/bg.jpg");
-    background-size: cover;
+    /*background-size: cover;
     background-position: center center;
-    /*background: #EC8C08;*/
+    background: #EC8C08;*/
     width: 100vw;
     height: 18vh;
 }
@@ -177,10 +178,15 @@ body {
 }
 
 .nossos-servicos {
+    text-align: center;
     width: 100vw;
-    height: 138rem;
-    background: url("../img/bg.jpg");
-    background-size: 100%;
+    padding-bottom: 25px;
+    background-image: url("../img/tijolinho.jpg");
+    background-size: cover;
+}
+
+.nossos-servicos h1 {
+    padding: 20px 0;
 }
 
 .nossos-servicos-content {
@@ -194,7 +200,6 @@ body {
     margin-bottom: 1.25rem;
     width: 100%;
     height: 41vh;
-    border: 1px solid blue;
 }
 
 .inner1 {
@@ -206,6 +211,23 @@ body {
     color: #fff;
 }
 
+.nossos-trabalhos {
+    width: 100vw;
+}
+
+.imgs-works {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.imgs-works img {
+    margin-bottom: 15px;
+    width: 48%;
+    height: 14.37rem;
+}
+
 .tabela {
     padding-top: 20px;
     width: 100vw;
@@ -215,12 +237,20 @@ body {
     width: 70%;
 }
 
+.mapa {
+    margin-top: 50px;
+}
+
 .mapa .mapa-conteudo {
     margin: 10px auto;
     width: 90%;
 }
 
-.mapa h3, h1 {
+.mapa .mapa-conteudo h3 {
+    padding-bottom: 15px;
+}
+
+.mapa h1 {
     text-align: center;
     padding: 20px 0;
 }
