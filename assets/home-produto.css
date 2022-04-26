@@ -1,33 +1,16 @@
-:root {
-    --cor-texto: black;
-}
-
-*{
-    font-family: 'Tapestry', cursive;
-}
-
-html {
-    height: 100%;
-}
-
-
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Tapestry', cursive;
 }
 
 body {
     background: linear-gradient(#141e30, #243b55);
-    height: 100%;
 }
 
 a {
     color: var(--cor-texto);
     text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 .navegacao {
@@ -37,6 +20,10 @@ a:hover {
 
 .navegacao-link {
     margin-left: 2rem;
+}
+
+.navegacao li a:hover {
+    text-decoration: underline;
 }
 
 .cabecalho {
@@ -57,8 +44,21 @@ a:hover {
     letter-spacing: 10px;
 }
 
-.video {
-    display: flex;
-    margin: 80px auto 0 auto;
-    border-radius: 0 0 10px 10px;
+article {
+    line-height: 25px;
+    font-size: 20px;
+}
+
+article h1 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.produto p {
+    font-size: 20px;
+}
+
+.produto #preco {
+    font-size: 30px;
+    color: rgb(207, 219, 39);
 }
