@@ -1,0 +1,36 @@
+.produto {
+    margin: 0 auto 0 auto;
+    width: 50rem;
+}
+
+.produto img {
+    display: flex;
+    margin: 0 auto 0 auto;
+    width: 450px;
+    height: 400px;
+    transition: .5s;
+}
+
+.produto img:hover {
+
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+
+}
+
+article h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+article {
+    color: white;
+    text-align: justify;
+}
+
+.produto p {
+    padding: 20px 0;
+}
+
