@@ -283,15 +283,6 @@ body {
     width: 100%;
 }
 
-.beneficios .video iframe {
-    width: 90%;
-    margin: 5px auto 10px auto;
-}
-
-.beneficios .video {
-    display: flex;
-}
-
 .itens {
 	line-height: 1.5;
 }
@@ -301,7 +292,7 @@ body {
 }
 
 .itens:before {
-	content: "🟊";
+	content: "*";
 }
 
 .imagem-beneficios {
