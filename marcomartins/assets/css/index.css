@@ -1,10 +1,11 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Tapestry', cursive;
 }
 
 a {
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     transition: .3s;
 }
@@ -64,11 +65,11 @@ nav {
         right: 0;
         width: 100vw;
         height: 50vw;
-        background: #23232e;
+        background: #f0f0f5;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        transform: translateX(100%);
+        /*transform: translateX(100%);*/
         transition: transform .3s ease-in;
     }
     
@@ -87,7 +88,6 @@ nav {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
     color: #000000;
     background: linear-gradient(#FEFEFE, #888888);
 }
