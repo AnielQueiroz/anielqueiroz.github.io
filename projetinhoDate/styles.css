@@ -1,0 +1,57 @@
+html {
+    /* width: 100%; */
+}
+
+.body {
+    /* display: flex;  */
+    width: 100vw; 
+    height: 100vh;
+    background-image: url('./couple.jfif');
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.page {
+    display: none;
+  }
+.page.active {
+    display: block;
+}
+
+.header {
+    background-color: aquamarine;
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 5em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.container {
+    color: white;
+    margin: 20% auto 5em auto;
+    border-radius: 5%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+
+.container div {
+    /* width: 90%; */
+    padding: 2em;
+}
+
+.container div p {
+    font-size: 4em;
+}
+
+.container div button {
+    font-size: 4em; 
+    right: 0;
+}
+
+h2 {
+    font-size: 4em;
+}
