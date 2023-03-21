@@ -71,7 +71,7 @@ function respostaNao() {
 //--------------------------------------------
 
   let contadorSim = 0; // inicializa o contador de cliques
-  const numMaxCliquesSim = 3; // define o número máximo de cliques permitidos
+  let numMaxCliquesSim = 0; // define o número máximo de cliques permitidos
 
   function respostaSim() {
     // cria um array com três mensagens diferentes
@@ -97,9 +97,18 @@ function respostaNao() {
       const closeButton = document.createElement("button");
       closeButton.classList.add("close-button");
       closeButton.innerHTML = "&times;";
-      closeButton.onclick = function() {
+      
+      // adiciona o evento de escuta de toque ao botão "closeButton"
+      closeButton.addEventListener("touchend", function() {
         modal.remove();
-      };
+        numMaxCliquesSim++;
+
+        if (numMaxCliquesSim == 4) {
+          // redireciona o usuário para outra página
+          window.location.href = "screens/enfim.html";
+        }
+      });
+
       modalContent.appendChild(closeButton);
   
       // adiciona o modal ao corpo da página
@@ -108,10 +117,10 @@ function respostaNao() {
       contadorSim++; // incrementa o contador de cliques
 
       // verifica se o contador de cliques atingiu o número máximo permitido
-      if (contadorSim === numMaxCliquesSim) {
-        // redireciona o usuário para outra página
-        window.location.href = "screens/enfim.html";
-      }
+      // if (numMaxCliquesSim == 4) {
+      //   // redireciona o usuário para outra página
+      //   window.location.href = "screens/enfim.html";
+      // }
     }
   }
     
