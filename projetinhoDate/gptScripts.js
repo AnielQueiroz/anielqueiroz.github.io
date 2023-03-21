@@ -83,6 +83,7 @@ function respostaNao() {
       modal.appendChild(modalContent);
   
       modalContent.style.fontSize = "4em";
+      modalContent.style.padding = "1em"
   
       // adiciona o botão para fechar o modal
       const closeButton = document.createElement("button");
