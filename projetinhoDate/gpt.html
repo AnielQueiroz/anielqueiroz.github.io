@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Para meu amor</title>
+    <style>
+      /* Estilos para as páginas */
+      .pagina {
+        display: none;
+      }
+      .pagina.ativa {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <div class="header">
+        <h1>Para meu amor</h1>
+    </div>
+
+    <div class="container">
+      <div class="pagina pagina-1 ativa">
+        <p>Você uma vez disse: "Eu namoro um cara da TI"</p><br>
+        <p>Então...decidi fazer algo gay só que no meu habitat natural.</p><br>
+        <br>
+        <p>Espero que goste!</p><br>
+        <br>
+        <p>Agora só clicar em Avançar, hihi</p><br>
+        <br>
+        <button id="next-button" onclick="avancarPagina()">Avançar</button>
+      </div>
+      <div class="pagina pagina-2">
+        <p>Ontem foi dia 24, o nosso mês-versário, 3 meses, só 3 meses, acredita? Eu quando fui calcular as datas não acreditei, são apenas 3 meses, mas parece uma vida, parece que te conheço faz 1 ano.</p>
+        <br>
+        <button id="next-button" onclick="avancarPagina()">Avançar</button>
+      </div>
+      <div class="pagina pagina-3">
+        <p>Você me faz ser uma pessoa melhor, me faz feliz, me sinto bem quando estou com você, o nosso tempo junto é tão gostoso que se eu pudesse eu eternizaria.</p>
+        <br>
+        <br>
+        <p>Eu me sinto incrivel com você do meu lado!</p>
+        <br>
+        <button id="next-button" onclick="avancarPagina()">Avançar</button>
+      </div>
+      <div class="pagina pagina-4">
+        <p>A gente tá preste a começar nossa maratona de fudência e eu aqui sendo gay, então pra quebrar o clima...</p>
+        <br>
+        <br>
+        <p>Você é uma mulher gostosa pra caralho, tô salivando por você, quero te fuder até o dia raiar, até dizermos chega!</p>
+        <br>
+        <br>
+        <p>Sou apaixanado pelo seu corpo, tô louquinho pra me perder em suas curvas, fazer de você um poema e te ler com minha língua</p>
+        <br>
+        <br>
+        <p>Fim!</p>
+        <br>
+        <button id="next-button" onclick="avancarPagina()">Avançar</button>
+      </div>
+      <div class="pagina pagina-5">
+        <p>Quer namorar comigo?</p>
+        <br>
+        <button id="btn-sim">Sim</button>
+        <button id="btn-nao">Não</button>
+        <button id="next-button" onclick="avancarPagina()">Fugir da pergunta</button>
+      </div>
+      <div class="pagina pagina-6">
+        <p>Fim</p>
+        <br>
+      </div>
+    </div>
+    <script src="gptScripts.js"></script>
+  </body>
+</html>
