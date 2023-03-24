@@ -20,11 +20,11 @@ function avancarPagina() {
 
 //modal
 let contador = 0; // inicializa o contador de cliques
-const numMaxCliquesNao = 3; // define o número máximo de cliques permitidos
+let numMaxCliquesNao = 0; // define o número máximo de cliques permitidos
 
 function respostaNao() {
   // cria um array com três mensagens diferentes
-  const mensagens = ["Serio? Você clicou em não assim de primeira?", "Clicou de novo :/", "Tudo bem então, não é não né?", "Teste 5"];
+  const mensagens = ["Serio? Você clicou em não mesmo?", "Clicou de novo :/", "Tudo bem então, não é não né?"];
 
   // verifica se o contador de cliques é menor que o número de mensagens
   if (contador < mensagens.length) {
@@ -46,21 +46,25 @@ function respostaNao() {
     const closeButton = document.createElement("button");
     closeButton.classList.add("close-button");
     closeButton.innerHTML = "&times;";
-    closeButton.onclick = function() {
+    
+    // adiciona o evento de escuta de toque ao botão "closeButton"
+    closeButton.addEventListener("touchend", function() {
       modal.remove();
-    };
+      numMaxCliquesNao++;
+      console.log(numMaxCliquesNao)
+
+      if (numMaxCliquesNao == 3) {
+        // redireciona o usuário para outra página
+        window.location.href = "screens/ficamento.html";
+      }
+    });
+    
     modalContent.appendChild(closeButton);
 
     // adiciona o modal ao corpo da página
     document.body.appendChild(modal);
 
     contador++; // incrementa o contador de cliques
-
-    // verifica se o contador de cliques atingiu o número máximo permitido
-    if (contador === numMaxCliquesNao) {
-      // redireciona o usuário para outra página
-      window.location.href = "screens/ficamento.html";
-    }
   }
 }
   
@@ -102,6 +106,7 @@ function respostaNao() {
       closeButton.addEventListener("touchend", function() {
         modal.remove();
         numMaxCliquesSim++;
+        console.log(numMaxCliquesSim)
 
         if (numMaxCliquesSim == 4) {
           // redireciona o usuário para outra página
@@ -115,12 +120,6 @@ function respostaNao() {
       document.body.appendChild(modal);
   
       contadorSim++; // incrementa o contador de cliques
-
-      // verifica se o contador de cliques atingiu o número máximo permitido
-      // if (numMaxCliquesSim == 4) {
-      //   // redireciona o usuário para outra página
-      //   window.location.href = "screens/enfim.html";
-      // }
     }
   }
     
