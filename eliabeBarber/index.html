@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eliabe Barber</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+  <!-- Barra de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container text-center">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#agendamento">Agendamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Cabeçalho -->
+  <header class="bg-primary text-white text-center py-5">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item hover">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#agendamento">Agendamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+    <div class="container">
+        <h1 class="display-4">Eliabe Barber</h1>
+        <p class="lead">O melhor lugar para cuidar do seu visual</p>
+    </div>
+   </header>
+
+
+  <div class="container-sm" style="width: 90%;">
+    <!-- Serviços -->
+    <section id="servicos" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Nossos Serviços</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card card-marginBottom">
+                        <img src="corte1.jpg" class="card-img-top" alt="Corte 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Corte Clássico</h5>
+                            <p class="card-text">Descrição do serviço.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card card-marginBottom">
+                        <img src="corte2.jpg" class="card-img-top" alt="Corte 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Corte Moderno</h5>
+                            <p class="card-text">Descrição do serviço.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card card-marginBottom">
+                        <img src="corte3.jpg" class="card-img-top" alt="Corte 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Corte Barba e Bigode</h5>
+                            <p class="card-text">Descrição do serviço.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section id="agendamento" class="py-5 bg-light">
+        <div class="container">
+        <h2 class="text-center">Agende seu horário</h2>
+        <div class="row justify-content-center">
+            <p>Clique no link abaixo pra agendar um horário</p>
+            <a class="btn btn-primary text-white text-center navbar-brand" href="https://api.whatsapp.com/send/?phone=554199318074&text=C%C3%B3digo%3A+7jswwfwegj2058%3B+Ol%C3%A1+gostaria+de+agendar+um+hor%C3%A1rio%21&type=phone_number&app_absent=0">Agendar</a>
+        </div>
+        <!-- <div class="row justify-content-center">
+            <div class="col-lg-6">
+            <form>
+                <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name">
+                </div>
+                <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                <label for="phone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="phone">
+                </div>
+                <div class="mb-3">
+                <label for="date" class="form-label">Data</label>
+                <input type="date" class="form-control" id="date">
+                </div>
+                <div class="mb-3">
+                <label for="time" class="form-label">Horário</label>
+                <input type="time" class="form-control" id="time">
+                </div>
+                <button type="submit" class="btn btn-primary">Agendar</button>
+            </form>
+            </div>
+        </div> -->
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Fale comigo no whatsapp</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <!-- <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email">
+                        </div> -->
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="message" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>Todos os direitos reservados &copy; 2023 Eliabe Barber</p>
+  </footer>
+
+  <script src="./scripts/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+
+</html>

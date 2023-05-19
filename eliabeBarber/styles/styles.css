@@ -1,0 +1,13 @@
+.card-marginBottom {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.hover {
+    width: 50%;
+}
+
+.hover:hover {
+    background-color: azure;
+    animation: 1s
+}
