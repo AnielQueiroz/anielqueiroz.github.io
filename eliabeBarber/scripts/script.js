@@ -29,21 +29,21 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // carousel
-var images = [
-    "../assets/imagem1.jpg",
-    "../assets/imagem2.jpg",
-    "../assets/imagem3.jpg"
-];
+// var images = [
+//     "../assets/imagem1.jpg",
+//     "../assets/imagem2.jpg",
+//     "../assets/imagem3.jpg"
+// ];
   
-var currentIndex = 0;
-var headerCarousel = document.getElementById("header-carousel");
+// var currentIndex = 0;
+// var headerCarousel = document.getElementById("header-carousel");
   
-function changeHeaderImage() {
-    headerCarousel.style.backgroundImage = "url(" + images[currentIndex] + ")";
-    currentIndex = (currentIndex + 1) % images.length;
-}
+// function changeHeaderImage() {
+//     headerCarousel.style.backgroundImage = "url(" + images[currentIndex] + ")";
+//     currentIndex = (currentIndex + 1) % images.length;
+// }
   
-changeHeaderImage();
-setInterval(changeHeaderImage, 9000);
+// changeHeaderImage();
+// setInterval(changeHeaderImage, 9000);
 
-headerCarousel.style.transition = "background-image 0.5s ease-in-out";
+// headerCarousel.style.transition = "background-image 0.5s ease-in-out";
