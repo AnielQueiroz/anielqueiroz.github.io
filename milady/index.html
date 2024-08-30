@@ -9,10 +9,19 @@
 <body class="bg-gray-100 text-gray-900">
 
     <!-- Home Page -->
-    <section id="home" class="px-2 from-pink-500 to-yellow-500 h-screen flex flex-col items-center justify-center">
-        <h1 class="text-4xl font-bold text-white mb-4">Parabéns, Amanda!</h1>
-        <p class="text-xl text-white">Você conseguiu! Estamos todos muito orgulhosos de você.</p>
-        <a href="#sobre" class="mt-6 px-6 py-2 bg-white text-pink-500 font-semibold rounded-full shadow-md hover:bg-gray-200">Saiba Mais</a>
+    <section id="home" class="bg-gradient-to-r from-pink-500 to-yellow-500 h-screen flex flex-col items-center justify-between">
+        <div class="px-4 text-center flex-col items-center mt-72">
+            <h1 class="text-4xl font-bold text-white mb-4">Parabéns, Amanda!</h1>
+            <p class="text-xl text-white">Você conseguiu, de novo! Estamos todos muito orgulhosos de você.</p>
+        </div>
+        <!-- Seta animada -->
+        <a href="#sobre" class="mb-6">
+            <div class="animate-bounce text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+            </div>
+        </a>
     </section>
 
     <!-- Sobre Ela -->
@@ -29,7 +38,7 @@
             <h2 class="text-3xl font-bold mb-6">Galeria</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 <!-- Adicione imagens aqui -->
-                <img src="foto1.jpg" alt="Momento 1" class="w-full h-48 object-cover rounded-lg shadow-md">
+                <img src="./assets/foto1.jpg" alt="Foto de Amanda" class="w-full h-48 object-cover rounded-lg shadow-md">
                 <img src="foto2.jpg" alt="Momento 2" class="w-full h-48 object-cover rounded-lg shadow-md">
                 <img src="foto3.jpg" alt="Momento 3" class="w-full h-48 object-cover rounded-lg shadow-md">
                 <!-- Continue adicionando imagens conforme necessário -->
@@ -40,10 +49,10 @@
     <!-- Depoimentos -->
     <section id="depoimentos" class="py-16 px-4 bg-white">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6">Depoimentos</h2>
+            <h2 class="text-3xl font-bold mb-6">O que pensam dela</h2>
             <div class="space-y-8">
                 <!-- Adicione depoimentos aqui -->
-                <blockquote class="text-xl font-semibold">"[Depoimento de um amigo(a), professor(a), ou familiar.]"</blockquote>
+                <blockquote class="text-xl font-semibold">"Milady é incrível, ela é forte, feroz, sensível, tem um coração gigante, me adotou e eu sou muito feliz por tê-la em minha vida."</blockquote>
                 <blockquote class="text-xl font-semibold">"[Outro depoimento aqui.]"</blockquote>
                 <!-- Continue adicionando depoimentos conforme necessário -->
             </div>
@@ -54,7 +63,7 @@
     <section id="contato" class="py-16 px-4 bg-gray-100">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Contato</h2>
-            <p class="text-lg leading-relaxed">Entre em contato com [Nome da Amiga] ou siga nas redes sociais.</p>
+            <p class="text-lg leading-relaxed">Se quiser saber mais dessa gata, só olhar o insta</p>
             <div class="mt-6">
                 <a href="https://instagram.com" target="_blank" class="px-6 py-2 bg-pink-500 text-white font-semibold rounded-full shadow-md hover:bg-pink-600">Instagram</a>
             </div>
