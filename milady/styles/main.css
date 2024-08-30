@@ -14,17 +14,16 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
+    overflow-x: hidden;
 }
 
 .swiper-slide {
-    min-height: 200px; /* Defina a altura mínima desejada */
+    min-height: 232px; /* Defina a altura mínima desejada */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; */
+    /* justify-content: center;
+    align-items: center; */
 }
 
 /* .swiper-button-next,
