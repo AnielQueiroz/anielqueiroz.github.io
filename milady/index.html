@@ -17,30 +17,38 @@
 </head>
 <body class="bg-gray-100 text-gray-900">
 
+    <!-- Modal Reutilizável -->
+    <div id="modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden z-50">
+        <div class="modal-content bg-white rounded-lg p-8 max-w-lg mx-auto shadow-lg">
+            <p id="modal-content"></p>
+            <button id="close-modal" class="mt-6 bg-blue-500 text-white px-4 py-2 rounded">Fechar</button>
+        </div>
+    </div>   
+
     <!-- Adicionando música -->
     <audio id="background-music" src="./assets/Evidências.mp3" loop></audio>
 
     <!-- Home Page -->
-    <section id="home" class="bg-gradient-to-r from-pink-500 to-yellow-500 h-screen flex flex-col items-center justify-between">
-        <div class="px-4 text-center flex-col items-center mt-16">
-            <h1 class="text-4xl font-bold text-white mb-8">Parabéns, Amanda!</h1>
-            <div class="h-64 rounded-lg shadow-md overflow-hidden">
-                <img src="./assets/foto1.jpg" alt="Foto de Amanda" class="w-full h-full object-cover">
+    <section id="home" class="bg-gradient-to-r from-pink-500 to-yellow-500 min-h-screen flex flex-col items-center justify-between">
+        <div class="px-4 text-center flex-col items-center mt-16 lg:mt-24">
+            <h1 class="text-4xl lg:text-5xl font-bold text-white mb-8">Parabéns, Amanda!</h1>
+            <div class="h-104 rounded-lg shadow-md overflow-hidden w-full max-w-screen-md">
+                <img src="./assets/foto1.jpg" alt="Foto de Amanda" class="w-full h-full object-cover object-center lg:object-top">
             </div>
-            <p class="mt-8 text-xl text-white">Você conseguiu, de novo! Estamos todos muito orgulhosos de você.</p>
+            <p class="mt-8 lg:mt-12 text-xl lg:text-2xl text-white">Você conseguiu, de novo! Estamos todos muito orgulhosos de você.</p>
         </div>
         <!-- Seta animada -->
-        <a href="#sobre" class="mb-16">
+        <a href="#sobre" class="mb-24 lg:mb-16">
             <div class="animate-bounce text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 lg:h-12 lg:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
             </div>
         </a>
-    </section>
+    </section>    
 
     <!-- Sobre Ela -->
-    <section id="sobre" class="py-16 px-4 bg-white">
+    <section id="sobre" class="py-16 px-4 bg-white min-h-92vh">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Sobre Amanda</h2>
             <p class="text-lg text-gray-700 mb-4">
@@ -56,7 +64,7 @@
     </section>
 
     <!-- Galeria -->
-    <section id="galeria" class="py-16 px-4 bg-gray-100">
+    <section id="galeria" class="py-16 px-4 bg-gray-100 min-h-92vh">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Galeria</h2>
             <!-- Swiper -->
@@ -64,17 +72,17 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <div class="h-64 rounded-lg shadow-md overflow-hidden">
+                        <div class="h-114 rounded-lg shadow-md overflow-hidden">
                             <img src="./assets/foto1.jpg" alt="Foto de Amanda" class="w-full h-full object-cover">
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="h-64 rounded-lg shadow-md overflow-hidden">
+                        <div class="h-114 rounded-lg shadow-md overflow-hidden">
                             <img src="./assets/foto1.jpg" alt="Foto de Amanda" class="w-full h-full object-cover">
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="h-64 rounded-lg shadow-md overflow-hidden">
+                        <div class="h-114 rounded-lg shadow-md overflow-hidden">
                             <img src="./assets/foto1.jpg" alt="Foto de Amanda" class="w-full h-full object-cover">
                         </div>
                     </div>
@@ -85,19 +93,32 @@
     </section>    
 
     <!-- Depoimentos -->
-    <section id="depoimentos" class="py-16 px-4 bg-white">
-        <div class="max-w-4xl mx-auto text-center">
+    <section id="depoimentos" class="py-16 px-4 bg-white h-114">
+        <div class="max-w-4xl mx-auto text-center h-4/5">
             <h2 class="text-3xl font-bold mb-6">O que pensam dela</h2>
             <!-- Swiper -->
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide p-6 text-xl font-semibold bg-gray-100 rounded-lg shadow-md">
-                        <p>"Milady é incrível, ela é forte, feroz, sensível, tem um coração gigante, me adotou e eu sou muito feliz por tê-la em minha vida."</p>
+                        <p id="depoimento1" class="truncate-text">
+                            "Milady é incrível, ela é forte, feroz, sensível, tem um coração gigante."
+                        </p>
+                        <button data-target="depoimento1" class="text-blue-500 underline leia-mais hidden">Leia mais</button>
                         <p class="mt-4 text-lg font-medium">- Aniel Queiroz</p>
                     </div>
                     <div class="swiper-slide p-6 text-xl font-semibold bg-gray-100 rounded-lg shadow-md">
-                        <p>"Amanda é uma pessoa fantástica. Sua dedicação e energia são inspiradoras."</p>
+                        <p id="depoimento2" class="truncate-text">
+                            "Amanda é uma pessoa fantástica. Sua dedicação e energia são inspiradoras."
+                        </p>
+                        <button data-target="depoimento2" class="text-blue-500 underline leia-mais hidden">Leia mais</button>
                         <p class="mt-4 text-lg font-medium">- Maria Oliveira</p>
+                    </div>
+                    <div class="swiper-slide p-6 text-xl font-semibold bg-gray-100 rounded-lg shadow-md">
+                        <p id="depoimento3" class="truncate-text">
+                            "Olá, pra quem não me conhece, me chamo Quilson  denominado filho de mileyde, uma mulher muito querida e especial que cativa muitas pessoas com seu sorriso, seu carinho e seu jeitinho extrovertida  de ser tive o prazer de conhecer essa pessoa maravilhosa através de um grupo de amigos grupo esse que eu achei que séria apenas mais um do qual eu entrava conversava fazia duas ou três amizades e saia até pq eu não sou muito de grupos, mas em fim nesse grupo eu conheci essa pessoa maravilhosa que logo de cara me ganhou pelo seu jeito acolhedor e carinhoso ela me acolheu no grupo, nos encontros da galera e na vida dela, eu me identifiquei muito com ela por coisas relacionadas a vida, e pela determinação dela. hoje em dia é minha mamãe que eu amo muito, e não vou abandonar nunca, msm estando distante ela chega junto, ela se preocupa, e sempre faz questão da minha presença nos lugares do qual ela vai estar, eu poderia passar horas falando sobre ela que mesmo Asim eu não teria palavras pra descrever o quanto ela é incrível e especial pra mim estou muito orgulhoso por ela e muito feliz também e sei que essa formação é apenas uma das milhares de coisas que ela vai conquistar ao logo do tempo, quero deixar meus parabéns e dizer que eu te amo muito mãe."
+                        </p>
+                        <button data-target="depoimento3" class="text-blue-500 underline leia-mais hidden">Leia mais</button>
+                        <p class="mt-4 text-lg font-medium">- Quilson filho</p>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -106,8 +127,8 @@
     </section>
 
     <!-- Contato -->
-    <section id="contato" class="py-16 px-4 bg-gray-100">
-        <div class="max-w-4xl mx-auto text-center">
+    <section id="contato" class="py-10 px-4 bg-gray-100 h-56">
+        <div class="max-w-4xl mx-auto text-center pb-10">
             <h2 class="text-3xl font-bold mb-6">O insta dela</h2>
             <p class="text-lg leading-relaxed">Se quiser saber mais dessa gata, só olhar o insta</p>
             <div class="mt-6">

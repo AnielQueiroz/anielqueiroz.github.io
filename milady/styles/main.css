@@ -46,3 +46,53 @@ body {
 .swiper-pagination-bullet {
     background: #000 !important;
 }
+
+.h-104 {
+    height: 30rem;
+}
+
+.h-114 {
+    height: 38rem;
+}
+
+.min-h-92vh {
+    min-height: 92vh;
+}
+
+.truncate-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 8; /* número de linhas que você quer exibir */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#modal {
+    overflow: auto; /* Permite rolagem se necessário */
+}
+
+/* Conteúdo do Modal */
+.modal-content {
+    max-height: 90vh; /* Limita a altura máxima do modal */
+    overflow-y: auto; /* Adiciona rolagem vertical se o conteúdo exceder a altura máxima */
+    max-width: 90vw; /* Limita a largura máxima do modal */
+}
+
+@media screen and (max-width: 620px) {
+    .h-104 {
+        height: 23rem;
+    }
+
+    .h-114 {
+        height: 30rem;
+    }
+
+    .truncate-text {
+        -webkit-line-clamp: 5;
+    }
+
+    .modal-content {
+        max-width: 95vw;
+        max-height: 80vh;
+    }
+}
